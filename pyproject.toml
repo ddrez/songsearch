@@ -1,0 +1,18 @@
+[project]
+name = "songsearch"
+version = "0.1.0"
+description = "Search songs by lyrics"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = [
+    "anyascii==0.3.2",
+    "demucs==4.1.0a3",
+    "faster-whisper==1.0.3",
+    "metaphone==0.6",
+    "numpy==1.26.4",
+]
+
+[tool.uv.sources]
+demucs = { git = "https://github.com/adefossez/demucs.git" }
+faster-whisper = { git = "https://github.com/SYSTRAN/faster-whisper.git" }
